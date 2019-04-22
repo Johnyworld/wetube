@@ -1,0 +1,21 @@
+.videos {
+    width: 100%;
+    max-width: 1240px;
+    margin: 0 auto;
+    display: grid;
+    grid-gap: 40px;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    .videoBlock {
+
+        .videoBlock__video-wrap {
+            overflow: hidden;
+
+            video {
+                width: 100%;
+                height: 230px;
+                object-fit: cover;
+            }
+        }
+    }
+}

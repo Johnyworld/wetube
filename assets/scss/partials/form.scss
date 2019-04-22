@@ -1,0 +1,69 @@
+.form-container {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    align-items: center;
+
+    form {
+        margin-bottom: 50px;
+        padding: 50px;
+        background-color: #334f82;
+        box-sizing: border-box;
+        box-shadow: 0 3px 3px rgba(0, 0, 0, .1);
+
+        input {
+            display: block;
+            width: 100%;
+            margin-bottom: 20px;
+            border-bottom: 1px solid #4a6698;
+
+            &:not([type="submit"]) {
+                padding: 10px 5px 5px;
+                font-size: 15px;
+                font-weight: 600;
+                background-color: transparent;
+            }
+
+            &[type="submit"] {
+                margin-top: 50px;
+                border-bottom: 0;
+                margin-bottom: 0;
+            }
+
+            &[type="file"] {
+                border: 0;
+                font-size: 12px;
+            }
+        }
+        
+        textarea {
+            width: 100%;
+            height: 8em;
+            max-width: 100%;
+            padding: 5px;
+            font-size: 14px;
+            border: 0;
+            box-sizing: border-box;
+            border-bottom: 1px solid #4a6698;
+        }
+        
+        .file-upload {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin-bottom: 20px;
+            border-bottom: 1px solid #aaa;
+            padding: 5px;
+    
+            label {
+                float: left;
+                color: #ccc;
+                margin-right: 20px;
+            }
+            input[type="file"] {
+                margin-bottom: 0;
+                padding: 0;
+            }
+        }
+    }
+}

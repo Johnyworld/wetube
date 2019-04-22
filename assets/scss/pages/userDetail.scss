@@ -1,0 +1,35 @@
+.user-profile {
+    text-align: center;
+    
+    a.btn {
+        margin-top: 10px;
+    }
+
+    .user-profile__header {
+        margin: 0px auto 20px;
+
+        img {
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 50px;
+        }
+
+        h4 {
+            margin-top: 10px;
+            font-size: 16px;
+            font-weight: 300;
+        }
+    }
+
+    .user-videos {
+        padding: 50px 0;
+
+        .videoBlock:not(:last-child) {
+            margin-bottom: 30px;
+        }
+    }
+
+    
+}

@@ -1,0 +1,33 @@
+.social-login {
+    width: 100%;
+    max-width: 400px;
+
+    a:not(:last-child) {
+        margin-bottom: 10px;
+    }
+
+    a.social-login--github {
+        background-color: #ad5555;
+    }
+
+    a.social-login--facebook {
+        background-color: #3a5998;
+    }
+
+    a {
+        font-size: 14px;
+        font-weight: 400;
+        color: white;
+        transition: .3s;
+
+        i {
+            margin-right: 5px;
+            font-size: 18px;
+        }
+
+        &:hover {
+            background-color: $main;
+            color: white;
+        }
+    }
+}

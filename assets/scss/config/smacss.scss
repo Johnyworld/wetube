@@ -1,0 +1,61 @@
+/* Base */
+
+
+/* Layout */
+.l-wrapper {
+    max-width: 1240px;
+    margin: 0 auto;
+}
+
+.l-wrapper.is-small {
+    max-width: 800px;
+}
+
+.l-form {
+    max-width: 400px;
+}
+
+.l-grid {
+    margin: 0 -10px;
+}
+
+.l-col {
+    padding: 0 10px;
+}
+
+.l-col-9-12 { width: 75% }
+.l-col-6-12 { width: 50% }
+.l-col-4-12 { width: 33.333334% }
+.l-col-3-12 { width: 25% }
+.l-col-2-12 { width: 16.666667% }
+.l-col-1-12 { width: 8.333334% }
+.l-col-2-10 { width: 20% }
+.l-col-m-12-12 { width: 100% }
+.l-col-m-6-12 { width: 50% }
+.l-col-m-4-12 { width: 33.333334% }
+
+
+/* Module */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4a78ce;
+    font-size: 15px;
+    font-weight: 600;
+    text-align: center;
+    color: white;
+    border-radius: 5px;
+    box-shadow: 0px 3px 3px rgba( 0, 0, 0, .1 );
+}
+
+.btn.is-full {
+    display: block;
+    width: 100%;
+}
+
+/* State */
+.is-hidden {
+    display: none;
+}
+
+/* Theme */

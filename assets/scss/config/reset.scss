@@ -1,0 +1,55 @@
+body, div, ul, li, h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+input {
+    border: 0;
+    color: white;
+    &:focus,
+    &:active {
+        outline: none;
+    }
+    &[type="submit"] {
+        cursor: pointer;
+    }
+    &::placeholder {
+        color: #5b79ad;
+        font-weight: 300;
+    }
+}
+
+button {
+    border: 0;
+    cursor: pointer;
+    &:focus,
+    &:active {
+        outline: none;
+    }
+}
+
+textarea {
+    color: white;
+    background-color: transparent;
+    &:focus,
+    &:active {
+        outline: none;
+    }
+    &::placeholder {
+        color: #5b79ad;
+        font-weight: 300;
+    }
+}

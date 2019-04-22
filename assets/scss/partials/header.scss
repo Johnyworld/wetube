@@ -1,0 +1,64 @@
+.header {
+    width: 100%;
+    background-color: #23385f;
+
+    .header__wrapper {
+        padding: 12px 20px;
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        align-items: center;
+
+        .header__column {
+
+            i {
+                color: white;
+                font-size: 40px;
+            }
+
+            &:nth-child(2) {
+                width: 100%;
+                justify-self: center;
+            }
+
+            &:last-child {
+                justify-self: end;
+            }
+
+            ul {
+                display: flex;
+                align-items: center;
+                color: white;
+                font-weight: 600;
+                text-transform: uppercase;
+
+                li:not(:last-child) {
+                    margin-right: 20px;
+                }
+            }
+
+            .btn {
+                background-color: white;
+                color: $main;
+                margin-right: -13px;
+            }
+
+            form {
+                width: 100%;
+
+                input {
+                    width: 100%;
+                    padding: 10px 15px;
+                    border-radius: 50px;
+                    font-size: 15px;
+                    color: $black;
+                    font-weight: 600;
+
+                    &::placeholder {
+                        color: #aaa;
+                        font-weight: 300;
+                    }
+                }
+            }
+        }
+    }
+}

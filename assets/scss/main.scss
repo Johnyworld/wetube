@@ -1,0 +1,22 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    background-color: #24385f;
+    color: #8ba1ca;
+    font-size: 14px;
+    font-family: 'Open Sans', "Noto Sans KR", sans-serif;
+}
+
+main {
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 50px;
+    min-height: 70vh;
+    
+}
+
+.videoBlock__thumbnail {
+    max-height: 400px;
+}

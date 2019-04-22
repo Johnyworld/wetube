@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700');
+@import url('https://fonts.googleapis.com/earlyaccess/notosanskr.css');
+
+@import 'config/_variables.scss';
+@import 'config/reset.scss';
+@import 'config/smacss.scss';
+
+@import 'main.scss';
+
+@import 'pages/home.scss';
+@import 'pages/videoDetail.scss';
+@import 'pages/userDetail.scss';
+
+
+@import 'partials/header.scss';
+@import 'partials/footer.scss';
+@import 'partials/form.scss';
+@import 'partials/socialLogin.scss';
+@import 'partials/videoBlock.scss';
+@import 'partials/videoPlayer.scss';
+@import 'partials/videoRecorder.scss';

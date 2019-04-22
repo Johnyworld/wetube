@@ -1,0 +1,36 @@
+extends layouts/main
+include mixins/videoPlayer
+
+block content
+    .video-detail__container
+        +videoPlayer({
+            src: video.fileUrl
+        })
+        .video__info
+            if loggedUser && video.creator.id === loggedUser.id
+                a.btn(href=routes.editVideo(video.id)) Edit Video
+            h5.video__title=video.title
+            span.video__views 조회수: #{video.views}
+            .video__author
+                |Uploaded by 
+                a(href=routes.userDetail(video.creator.id))=video.creator.name
+            p.video__description=video.description
+        .video__comments
+            if video.comments.length <= 1
+                span.video__comment-number
+                    span#jsCommentNumber=video.comments.length
+                    |  comment
+            else 
+                span.video__commnet-number
+                    span#jsCommentNumber=video.comments.length
+                    |  comments
+            if loggedUser
+                form.add__comment#jsAddComment
+                    input(type="text", placeholder="Add a Comment", maxlength="50")
+            ul.video__comment-list#jsCommentList
+                each comment in video.comments.reverse()
+                    li
+                        span.video__comment-txt=comment.text
+                            if loggedUser && comment.creator == loggedUser.id
+                                i.fas.fa-minus-circle.video__comment-deletebtn
+                                span.video__comment-id=comment.id
