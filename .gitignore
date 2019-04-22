@@ -82,6 +82,8 @@ typings/
 package-lock.json
 uploads
 static
+views
+scss
 
 # DynamoDB Local files
 .dynamodb/
